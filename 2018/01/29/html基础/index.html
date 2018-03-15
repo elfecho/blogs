@@ -112,10 +112,10 @@
     },
     algolia: {
       applicationID: '',
-      apiKey: '',
-      indexName: '',
+      apiKey: 'e4f6a7dcfd2a415ddee8ca3bb7652333',
+      indexName: 'elfecho',
       hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"没有找到与[${query}]相关的内容","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
@@ -135,13 +135,25 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c491056d7021e5c248129f6222a89004";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
   
   
     
@@ -163,7 +175,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">一分耕耘，一分收获</p>
+        <p class="site-subtitle">有空时来歇歇脚吧</p>
       
   </div>
 
@@ -234,9 +246,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -268,7 +318,7 @@
     <link itemprop="mainEntityOfPage" href="elfecho.github.io/blog/2018/01/29/html基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="elfeach">
+      <meta itemprop="name" content="elfecho">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/blog/images/avatar.jpg">
     </span>
@@ -706,9 +756,9 @@ height:pixels   设置视频播放器的高度。
             
               <img class="site-author-image" itemprop="image"
                 src="/blog/images/avatar.jpg"
-                alt="elfeach" />
+                alt="elfecho" />
             
-              <p class="site-author-name" itemprop="name">elfeach</p>
+              <p class="site-author-name" itemprop="name">elfecho</p>
               <p class="site-description motion-element" itemprop="description">擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。此为博客一枚。</p>
           </div>
 
@@ -726,15 +776,24 @@ height:pixels   设置视频播放器的高度。
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/blog/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/blog/tags/index.html">
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -789,7 +848,7 @@ height:pixels   设置视频播放器的高度。
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">elfeach</span>
+  <span class="author" itemprop="copyrightHolder">elfecho</span>
 
   
 </div>
@@ -850,6 +909,8 @@ height:pixels   设置视频播放器的高度。
   
 
 
+  
+
 
 
 
@@ -888,6 +949,11 @@ height:pixels   设置视频播放器的高度。
   
   
     <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -974,6 +1040,19 @@ height:pixels   设置视频播放器的高度。
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/blog/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/blog/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/blog/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
