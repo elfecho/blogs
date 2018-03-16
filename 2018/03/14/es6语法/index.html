@@ -79,20 +79,18 @@
 
 
 
-<meta name="description" content="1.变量声明const和let var关键字声明变量,无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部){}大括号内的代码块即为let 和 const的作用域。  function aa() {     if(bool) {         var test = &amp;apos;hello man&amp;apos;     } else {         console.lo">
+<meta name="description" content="1.变量声明const和let var关键字声明变量,无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部){}大括号内的代码块即为let 和 const的作用域。1234567function aa() &amp;#123;	if(bool) &amp;#123;		var test = &apos;hello man&apos;	&amp;#125; else &amp;#123;		console.log(test)">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="es6基础语法">
+<meta property="og:title" content="es6快速入门">
 <meta property="og:url" content="elfecho.github.io/2018/03/14/es6语法/index.html">
 <meta property="og:site_name" content="Elfecho’Blog">
-<meta property="og:description" content="1.变量声明const和let var关键字声明变量,无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部){}大括号内的代码块即为let 和 const的作用域。  function aa() {     if(bool) {         var test = &amp;apos;hello man&amp;apos;     } else {         console.lo">
+<meta property="og:description" content="1.变量声明const和let var关键字声明变量,无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部){}大括号内的代码块即为let 和 const的作用域。1234567function aa() &amp;#123;	if(bool) &amp;#123;		var test = &apos;hello man&apos;	&amp;#125; else &amp;#123;		console.log(test)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oz2tkq0zj.bkt.clouddn.com/17-11-9/52323298.jpg">
-<meta property="og:updated_time" content="2018-03-15T02:02:40.063Z">
+<meta property="og:updated_time" content="2018-03-15T08:18:51.596Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="es6基础语法">
-<meta name="twitter:description" content="1.变量声明const和let var关键字声明变量,无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部){}大括号内的代码块即为let 和 const的作用域。  function aa() {     if(bool) {         var test = &amp;apos;hello man&amp;apos;     } else {         console.lo">
-<meta name="twitter:image" content="http://oz2tkq0zj.bkt.clouddn.com/17-11-9/52323298.jpg">
+<meta name="twitter:title" content="es6快速入门">
+<meta name="twitter:description" content="1.变量声明const和let var关键字声明变量,无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部){}大括号内的代码块即为let 和 const的作用域。1234567function aa() &amp;#123;	if(bool) &amp;#123;		var test = &apos;hello man&apos;	&amp;#125; else &amp;#123;		console.log(test)">
 
 
 
@@ -128,7 +126,7 @@
 
 
 
-  <title>es6基础语法 | Elfecho’Blog</title>
+  <title>es6快速入门 | Elfecho’Blog</title>
   
 
 
@@ -296,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">es6基础语法</h1>
+          <h1 class="post-title" itemprop="name headline">es6快速入门</h1>
         
 
         <div class="post-meta">
@@ -382,76 +380,15 @@
 
       
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="http://oz2tkq0zj.bkt.clouddn.com/17-11-9/52323298.jpg" rel="gallery_cjes7j7ky0007yoqzw83eoa0g"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://oz2tkq0zj.bkt.clouddn.com/17-11-9/52323298.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
 
       
         <h2 id="1-变量声明const和let"><a href="#1-变量声明const和let" class="headerlink" title="1.变量声明const和let"></a>1.变量声明const和let</h2><blockquote>
-<p>var关键字声明变量,无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部)<br>{}大括号内的代码块即为let 和 const的作用域。</p>
+<p>var关键字声明变量,无论声明在何处，都会被视为声明在函数的最顶部(不在函数内即在全局作用域的最顶部)<br>{}大括号内的代码块即为let 和 const的作用域。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">aa</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(bool) &#123;</span><br><span class="line">		<span class="keyword">var</span> test = <span class="string">'hello man'</span></span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="built_in">console</span>.log(test)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<pre><code>function aa() {
-    if(bool) {
-        var test = &apos;hello man&apos;
-    } else {
-        console.log(test)
-    }
-}
-</code></pre><p>以上的代码实际上是：</p>
-<pre><code>function aa() {
-    var test // 变量提升
-    if(bool) {
-        test = &apos;hello man&apos;
-    } else {
-        //此处访问test 值为undefined
-        console.log(test)
-    }
-    //此处访问test 值为undefined
-}
-</code></pre><p>ES6中的let(let的作用域是在它所在当前代码块，但不会被提升到当前函数的最顶部。)</p>
-<pre><code>function aa() {
-    if(bool) {
-       let test = &apos;hello man&apos;
-    } else {
-        //test 在此处访问不到
-        console.log(test)
-    }
-}
-const name = &apos;lux&apos;
-name = &apos;joe&apos; //再次赋值此时会报错
-</code></pre><p>例题：在ES5跟ES6中想依次输出0到9</p>
-<pre><code>var funcs = []
-//ES5告诉我们可以利用闭包解决这个问题
-for (var i = 0; i &lt; 10; i++) {
-    funcs.push((function(value) {
-        return function() {
-            console.log(value)
-        }
-    }(i)))
-}
-//ES6
-for(let i=0;i&lt;10;i++){
-    funcs.push(function(){
-        console.log(i)
-    })
-}
-funcs.forEach(function(func) {
-    func()
-})
-</code></pre>
+<p>以上的代码实际上是：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">aa</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> test <span class="comment">// 变量提升</span></span><br><span class="line">    <span class="keyword">if</span>(bool) &#123;</span><br><span class="line">        test = <span class="string">'hello man'</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">//此处访问test 值为undefined</span></span><br><span class="line">        <span class="built_in">console</span>.log(test)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//此处访问test 值为undefined</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>ES6中的let(let的作用域是在它所在当前代码块，但不会被提升到当前函数的最顶部。)<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">aa</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(bool) &#123;</span><br><span class="line">        <span class="keyword">let</span> test = <span class="string">'hello man'</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">//test 在此处访问不到</span></span><br><span class="line">        <span class="built_in">console</span>.log(test)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> name = <span class="string">'lux'</span></span><br><span class="line">name = <span class="string">'joe'</span> <span class="comment">//再次赋值此时会报错</span></span><br></pre></td></tr></table></figure></p>
+<p>例题：在ES5跟ES6中想依次输出0到9<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> funcs = []</span><br><span class="line"><span class="comment">//ES5告诉我们可以利用闭包解决这个问题</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">    funcs.push((<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(value)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;(i)))</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//ES6</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">    funcs.push(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">funcs.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">func</span>) </span>&#123;</span><br><span class="line">    func()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
